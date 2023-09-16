@@ -1,0 +1,14 @@
+ext {
+    mockitoVersion = '3.12.4'
+    assertjVersion = '3.21.0'
+    junitJupiterBom = '5.9.1'
+
+    libraries = [
+            // testCompile
+            junit_jupiter_bom    : "org.junit.jupiter:junit-jupiter-bom:${junitJupiterBom}",
+            junit_jupiter_api    : "org.junit.jupiter:junit-jupiter-api",
+            mockito              : "org.mockito:mockito-core:${mockitoVersion}",
+            mockito_junit_jupiter: "org.mockito:mockito-junit-jupiter:${mockitoVersion}",
+            assertj              : "org.assertj:assertj-core:${assertjVersion}",
+    ]
+}

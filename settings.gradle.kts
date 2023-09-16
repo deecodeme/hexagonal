@@ -1,2 +1,10 @@
 rootProject.name = "hexagonal"
-
+include("adapter")
+include("ddd")
+include("application")
+include("web-adapter")
+include("persistence-adapter")
+include("external-adapter")
+include("api")
+include("configuration")
+include("domain")
