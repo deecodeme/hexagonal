@@ -2,6 +2,7 @@ ext {
     mockitoVersion = '3.12.4'
     assertjVersion = '3.21.0'
     junitJupiterBom = '5.9.1'
+    lombokVersion = '1.18.28'
 
     libraries = [
             // testCompile
@@ -10,5 +11,6 @@ ext {
             mockito              : "org.mockito:mockito-core:${mockitoVersion}",
             mockito_junit_jupiter: "org.mockito:mockito-junit-jupiter:${mockitoVersion}",
             assertj              : "org.assertj:assertj-core:${assertjVersion}",
+            lombok               : "org.projectlombok:lombok:${lombokVersion}",
     ]
 }

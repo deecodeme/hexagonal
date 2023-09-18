@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.deecodeme.hexagonal.order'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(project(':order:domain'))
+    implementation(project(':ddd'))
+    implementation project(path: ':order:api')
+    compileOnly(libraries.lombok)
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation(libraries.mockito)
+    testImplementation(libraries.mockito_junit_jupiter)
+}
+
+test {
+    useJUnitPlatform()
+}

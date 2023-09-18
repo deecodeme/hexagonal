@@ -9,15 +9,24 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/adapter" />
-            <option value="$PROJECT_DIR$/api" />
-            <option value="$PROJECT_DIR$/application" />
-            <option value="$PROJECT_DIR$/configuration" />
+            <option value="$PROJECT_DIR$/account" />
+            <option value="$PROJECT_DIR$/city" />
+            <option value="$PROJECT_DIR$/city/adapter" />
+            <option value="$PROJECT_DIR$/city/api" />
+            <option value="$PROJECT_DIR$/city/application" />
+            <option value="$PROJECT_DIR$/city/configuration" />
+            <option value="$PROJECT_DIR$/city/ddd" />
+            <option value="$PROJECT_DIR$/city/domain" />
+            <option value="$PROJECT_DIR$/city/external-adapter" />
+            <option value="$PROJECT_DIR$/city/persistence-adapter" />
+            <option value="$PROJECT_DIR$/city/temp" />
+            <option value="$PROJECT_DIR$/city/web-adapter" />
             <option value="$PROJECT_DIR$/ddd" />
-            <option value="$PROJECT_DIR$/domain" />
-            <option value="$PROJECT_DIR$/external-adapter" />
-            <option value="$PROJECT_DIR$/persistence-adapter" />
-            <option value="$PROJECT_DIR$/web-adapter" />
+            <option value="$PROJECT_DIR$/inventory" />
+            <option value="$PROJECT_DIR$/order" />
+            <option value="$PROJECT_DIR$/order/api" />
+            <option value="$PROJECT_DIR$/order/application" />
+            <option value="$PROJECT_DIR$/order/domain" />
           </set>
         </option>
       </GradleProjectSettings>
