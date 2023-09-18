@@ -10,9 +10,13 @@ public interface NewOrderUseCase {
     class NewOrderCommand {
         private final String customerId;
         private final Map<String, Integer> itemQuantityMap;
-        public NewOrderCommand(String customerId, Map<String, Integer> itemQuantityMap) {
+        private NewOrderCommand(String customerId, Map<String, Integer> itemQuantityMap) {
             this.customerId = customerId;
             this.itemQuantityMap = itemQuantityMap;
+        }
+
+        public static NewOrderCommand of(String customerId, Map<String, Integer> itemQuantityMap) {
+            return new NewOrderCommand(customerId, itemQuantityMap);
         }
 
         public String getCustomerId() {
