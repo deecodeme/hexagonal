@@ -5,8 +5,12 @@ public interface CancelOrderUseCase{
 
     class CancelOrderCommand{
         private final String orderId;
-        public CancelOrderCommand(String orderId){
+        private CancelOrderCommand(String orderId){
             this.orderId = orderId;
+        }
+
+        public static CancelOrderCommand of(String orderId){
+            return new CancelOrderCommand(orderId);
         }
         public String getOrderId(){
             return orderId;

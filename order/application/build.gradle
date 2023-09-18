@@ -12,12 +12,14 @@ repositories {
 dependencies {
     implementation(project(':order:domain'))
     implementation(project(':ddd'))
-    implementation project(path: ':order:api')
+    implementation(project(path: ':order:api'))
     compileOnly(libraries.lombok)
-    testImplementation platform('org.junit:junit-bom:5.9.1')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation(platform(libraries.junit_bom))
+    testImplementation(libraries.junit_jupiter_api)
+    testImplementation(libraries.junit_jupiter_engine)
     testImplementation(libraries.mockito)
     testImplementation(libraries.mockito_junit_jupiter)
+    testImplementation(libraries.assertj)
 }
 
 test {
