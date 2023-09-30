@@ -1,6 +1,7 @@
 package com.deecodeme.hexagonal.order.application.service;
 
 import com.deecodeme.hexagonal.order.domain.Order;
+import com.deecodeme.hexagonal.order.domain.OrderFactory;
 import com.deecodeme.hexagonal.order.port.in.CancelOrderResult;
 import com.deecodeme.hexagonal.order.port.in.CancelOrderUseCase;
 import com.deecodeme.hexagonal.order.port.in.NewOrderUseCase;
@@ -32,7 +33,7 @@ class OrderServiceTest {
     @Test
     public void createOrderShouldCreateAndSaveOrder() {
         NewOrderUseCase.NewOrderCommand command = NewOrderUseCase.NewOrderCommand.of("customerId", Map.of("Item1", 2));
-        Order expectedOrder = Order.create(command.getCustomerId(), command.getItemQuantityMap());
+        Order expectedOrder = OrderFactory.create(Order.CustomerId.of(command.getCustomerId()), command.getItemQuantityMap());
 
         given(saveOrder.create(any(Order.class))).willReturn(expectedOrder);
 
@@ -57,7 +58,7 @@ class OrderServiceTest {
     @Test
     public void cancelOrderShouldReturnSuccessWhenOrderFound() {
         CancelOrderUseCase.CancelOrderCommand command = CancelOrderUseCase.CancelOrderCommand.of("orderId");
-        Order order = Order.create("customerId", Map.of("Item1", 2));
+        Order order = OrderFactory.create(Order.CustomerId.of("customerId"), Map.of("Item1", 2));
 
         given(findOrder.byId(command.getOrderId())).willReturn(Optional.of(order));
 

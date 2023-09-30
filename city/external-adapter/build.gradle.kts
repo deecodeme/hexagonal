@@ -2,7 +2,7 @@ plugins {
     id("java")
 }
 
-group = "com.deecodeme.hexagonal"
+group = "com.deecodeme.hexagonal.city"
 version = "1.0-SNAPSHOT"
 
 repositories {

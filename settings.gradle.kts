@@ -18,3 +18,12 @@ include("account")
 include("inventory")
 include("order:application")
 findProject(":order:application")?.name = "application"
+include("order:persistence-adapter")
+findProject(":order:persistence-adapter")?.name = "persistence-adapter"
+include("lang")
+include("account:domain")
+findProject(":account:domain")?.name = "domain"
+include("account:application")
+findProject(":account:application")?.name = "application"
+include("account:adapter")
+findProject(":account:adapter")?.name = "adapter"

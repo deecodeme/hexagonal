@@ -10,6 +10,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/account" />
+            <option value="$PROJECT_DIR$/account/adapter" />
+            <option value="$PROJECT_DIR$/account/application" />
+            <option value="$PROJECT_DIR$/account/domain" />
             <option value="$PROJECT_DIR$/city" />
             <option value="$PROJECT_DIR$/city/adapter" />
             <option value="$PROJECT_DIR$/city/api" />
@@ -23,10 +26,12 @@
             <option value="$PROJECT_DIR$/city/web-adapter" />
             <option value="$PROJECT_DIR$/ddd" />
             <option value="$PROJECT_DIR$/inventory" />
+            <option value="$PROJECT_DIR$/lang" />
             <option value="$PROJECT_DIR$/order" />
             <option value="$PROJECT_DIR$/order/api" />
             <option value="$PROJECT_DIR$/order/application" />
             <option value="$PROJECT_DIR$/order/domain" />
+            <option value="$PROJECT_DIR$/order/persistence-adapter" />
           </set>
         </option>
       </GradleProjectSettings>
