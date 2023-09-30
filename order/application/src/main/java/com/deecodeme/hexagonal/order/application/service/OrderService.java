@@ -1,6 +1,7 @@
 package com.deecodeme.hexagonal.order.application.service;
 
 import com.deecodeme.hexagonal.order.domain.Order;
+import com.deecodeme.hexagonal.order.domain.OrderFactory;
 import com.deecodeme.hexagonal.order.port.in.CancelOrderResult;
 import com.deecodeme.hexagonal.order.port.in.CancelOrderUseCase;
 import com.deecodeme.hexagonal.order.port.in.NewOrderUseCase;
@@ -21,7 +22,7 @@ public class OrderService implements NewOrderUseCase, CancelOrderUseCase {
 
     @Override
     public Order createOrder(NewOrderCommand command) {
-        Order newOrder = Order.create(command.getCustomerId(), command.getItemQuantityMap());
+        Order newOrder = OrderFactory.create(Order.CustomerId.of(command.getCustomerId()), command.getItemQuantityMap());
         return saveOrder.create(newOrder);
     }
 
