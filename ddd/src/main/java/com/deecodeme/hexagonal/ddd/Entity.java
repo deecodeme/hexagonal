@@ -1,7 +1,10 @@
 package com.deecodeme.hexagonal.ddd;
 
+import lombok.Getter;
+
 import java.sql.Timestamp;
 
+@Getter
 public abstract class Entity {
     private final String id;
     private final Timestamp createdAt;
@@ -9,13 +12,6 @@ public abstract class Entity {
     public Entity(String id) {
         this.id = id;
         this.createdAt = new Timestamp(System.currentTimeMillis());
-    }
-
-    public String getId() {
-        return id;
-    }
-    public Timestamp getCreatedAt() {
-        return createdAt;
     }
 
     @Override

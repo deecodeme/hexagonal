@@ -2,13 +2,14 @@ package com.deecodeme.hexagonal.account.domain;
 
 import com.deecodeme.hexagonal.ddd.Entity;
 import com.deecodeme.hexagonal.ddd.ValueObject;
+import lombok.Getter;
 
 import java.util.UUID;
 
+@Getter
 public class Account extends Entity {
-    private AccountId id;
+    private final AccountId accountId;
     private final AccountName name;
-
     private final AccountEmail email;
 
     public static Account of(AccountName name, AccountEmail email) {
@@ -17,7 +18,7 @@ public class Account extends Entity {
 
     private Account(AccountId accountId, AccountName name, AccountEmail email) {
         super(accountId.id);
-        this.id = accountId;
+        this.accountId = accountId;
         this.name = name;
         this.email = email;
     }
