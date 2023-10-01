@@ -16,7 +16,10 @@ public class AccountFetcherImpl implements AccountFetcher{
 
     @DgsQuery
     public AccountQueryResponse account(@InputArgument String accountId) {
-        Account account = getAccountUseCase.getAccount(GetAccountUseCase.GetAccountQuery.of(accountId));
+        Account account = getAccountUseCase.getAccount(
+                GetAccountUseCase.GetAccountQuery.builder()
+                        .accountId(Account.AccountId.of(accountId))
+                        .build());
         return AccountQueryResponse.builder()
                 .id(account.getAccountId().getId())
                 .email(account.getEmail().getEmail())
