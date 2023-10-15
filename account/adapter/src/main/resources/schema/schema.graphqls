@@ -1,9 +1,18 @@
-type Query{
-    account(id: String!): Account
+type Mutation{
+    createAccount(name: String!, email: String!): AccountResponse
 }
 
-type Account{
+type Query{
+    accountById(id: String!): AccountResponse
+    accountsFilter(accountQuery: AccountQuery!): [AccountResponse]
+}
+
+type AccountResponse{
     id: String!
     name: String!
     email: String!
+}
+
+input AccountQuery{
+    name: String
 }
