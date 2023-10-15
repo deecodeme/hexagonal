@@ -1,12 +1,10 @@
 package com.deecodeme.hexagonal.ddd;
 
-import lombok.Getter;
-
 import java.sql.Timestamp;
 
-@Getter
 public abstract class Entity {
     private final String id;
+
     private final Timestamp createdAt;
 
     public Entity(String id) {
@@ -20,5 +18,13 @@ public abstract class Entity {
                 "id='" + id + '\'' +
                 ", createdAt=" + createdAt +
                 '}';
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public Timestamp getCreatedAt() {
+        return createdAt;
     }
 }

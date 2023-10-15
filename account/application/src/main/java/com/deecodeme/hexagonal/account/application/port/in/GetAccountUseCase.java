@@ -1,10 +1,12 @@
 package com.deecodeme.hexagonal.account.application.port.in;
 
 import com.deecodeme.hexagonal.account.domain.Account;
+import lombok.Builder;
 
 public interface GetAccountUseCase {
     Account getAccount(GetAccountQuery query);
 
+    @Builder
     class GetAccountQuery {
         private final Account.AccountId accountId;
 
