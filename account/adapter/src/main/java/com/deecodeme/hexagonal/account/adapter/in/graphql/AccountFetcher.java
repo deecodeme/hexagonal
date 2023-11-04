@@ -1,7 +1,8 @@
-package com.deecodeme.hexagonal.account.adapter.graphql;
+package com.deecodeme.hexagonal.account.adapter.in.graphql;
 
-import com.deecodeme.hexagonal.account.adapter.graphql.generated.types.AccountQuery;
-import com.deecodeme.hexagonal.account.adapter.graphql.generated.types.AccountResponse;
+
+import com.deecodeme.hexagonal.account.adapter.in.graphql.generated.types.AccountQuery;
+import com.deecodeme.hexagonal.account.adapter.in.graphql.generated.types.AccountResponse;
 import com.netflix.graphql.dgs.InputArgument;
 
 import java.util.List;

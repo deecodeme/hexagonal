@@ -1,4 +1,4 @@
-package com.deecodeme.hexagonal.account.adapter.persistence;
+package com.deecodeme.hexagonal.account.adapter.out.persistence;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;

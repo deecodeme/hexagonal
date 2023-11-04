@@ -1,4 +1,4 @@
-package com.deecodeme.hexagonal.account.adapter.persistence;
+package com.deecodeme.hexagonal.account.adapter.out.persistence;
 
 import com.deecodeme.hexagonal.account.domain.Account;
 import com.deecodeme.hexagonal.account.domain.AccountFactory;

@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/account" />
             <option value="$PROJECT_DIR$/account/adapter" />
             <option value="$PROJECT_DIR$/account/application" />
+            <option value="$PROJECT_DIR$/account/configuration" />
             <option value="$PROJECT_DIR$/account/domain" />
             <option value="$PROJECT_DIR$/city" />
             <option value="$PROJECT_DIR$/city/adapter" />

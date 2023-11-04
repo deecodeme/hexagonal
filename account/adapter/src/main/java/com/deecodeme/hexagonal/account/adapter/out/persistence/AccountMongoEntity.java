@@ -1,4 +1,4 @@
-package com.deecodeme.hexagonal.account.adapter.persistence;
+package com.deecodeme.hexagonal.account.adapter.out.persistence;
 
 import lombok.Builder;
 import lombok.Getter;

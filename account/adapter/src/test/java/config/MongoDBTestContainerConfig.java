@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 import org.testcontainers.containers.MongoDBContainer;
 
 @Configuration
-@EnableMongoRepositories(basePackages = "com.deecodeme.hexagonal.account.adapter.persistence")
+@EnableMongoRepositories(basePackages = "com.deecodeme.hexagonal.account.adapter.out.persistence")
 public class MongoDBTestContainerConfig {
     public static MongoDBContainer mongoDBContainer = new MongoDBContainer("mongo:4.4.3")
             .withExposedPorts(27017);

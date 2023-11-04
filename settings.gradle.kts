@@ -27,3 +27,5 @@ include("account:application")
 findProject(":account:application")?.name = "application"
 include("account:adapter")
 findProject(":account:adapter")?.name = "adapter"
+include("account:configuration")
+findProject(":account:configuration")?.name = "configuration"

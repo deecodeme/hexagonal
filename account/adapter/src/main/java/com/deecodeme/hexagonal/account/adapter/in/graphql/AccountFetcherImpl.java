@@ -1,7 +1,7 @@
-package com.deecodeme.hexagonal.account.adapter.graphql;
+package com.deecodeme.hexagonal.account.adapter.in.graphql;
 
-import com.deecodeme.hexagonal.account.adapter.graphql.generated.types.AccountQuery;
-import com.deecodeme.hexagonal.account.adapter.graphql.generated.types.AccountResponse;
+import com.deecodeme.hexagonal.account.adapter.in.graphql.generated.types.AccountQuery;
+import com.deecodeme.hexagonal.account.adapter.in.graphql.generated.types.AccountResponse;
 import com.deecodeme.hexagonal.account.application.port.in.GetAccountUseCase;
 import com.deecodeme.hexagonal.account.application.port.in.SearchAccountUseCase;
 import com.deecodeme.hexagonal.account.domain.Account;
