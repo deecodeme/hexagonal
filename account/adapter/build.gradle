@@ -20,6 +20,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation(platform('com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:4.9.1'))
     implementation 'com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 
     implementation(project(':ddd'))
     implementation(project(':account:domain'))
@@ -31,6 +32,9 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.testcontainers:testcontainers:1.18.1'
+    testImplementation "org.testcontainers:junit-jupiter:1.18.1"
+    testImplementation "org.testcontainers:mongodb:1.18.1"
     testCompileOnly(libraries.lombok)
     testAnnotationProcessor(libraries.lombok)
 }
